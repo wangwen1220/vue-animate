@@ -1,0 +1,45 @@
+{
+  "name": "vue-animate",
+  "version": "2.1.1",
+  "description": "SCSS/CSS cross-browser animation library, for use with Vue.js 2.0. Ported from Animate.css.",
+  "author": "Steven",
+  "homepage": "https://github.com/wjtools/vue-animate",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjtools/vue-animate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wjtools/vue-animate/issues"
+  },
+  "keywords": [
+    "less",
+    "animate",
+    "animate.css",
+    "vue",
+    "vue.js",
+    "transition",
+    "vue-animate",
+    "css",
+    "sass",
+    "scss"
+  ],
+  "main": "dist/vue-animate.min.css",
+  "module": "src/sass/vue-animate.scss",
+  "files": [
+    "dist/vue-animate.css",
+    "dist/vue-animate.min.css",
+    "src"
+  ],
+  "devDependencies": {
+    "node-sass": "^4.8.3",
+    "windwalker-fusion": "^0.1.14"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=development node_modules/gulp/bin/gulp.js --gulpfile=fusionfile.js",
+    "watch": "cross-env NODE_ENV=development node_modules/gulp/bin/gulp.js --gulpfile=fusionfile.js --watch=1",
+    "build:less": "cross-env NODE_ENV=development node_modules/gulp/bin/gulp.js less --gulpfile=fusionfile.js",
+    "watch:less": "cross-env NODE_ENV=development node_modules/gulp/bin/gulp.js less --gulpfile=fusionfile.js --watch=1"
+  },
+  "dependencies": {}
+}
